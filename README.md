@@ -19,3 +19,9 @@ In a multithreading application, it is very important for us to handle multiple 
 See example code [here](002-MultithreadingUsingLocking/Program.cs)
 
 Let us understand this with an example. In the following example, we are only protecting the shared Count variable from concurrent access.
+
+## Protecting Shared Resource in Multithreading Using  Mutex
+
+Mutex also works likes a lock i.e. acquired an exclusive lock on a shared resource from concurrent access, but it works across multiple processes (if use named mutex). As we already discussed exclusive locking is basically used to ensure that at any given point of time, only one thread can enter into the critical section.
+
+See example code [here](003-MultithreadingUsingMutex/Program.cs)
