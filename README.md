@@ -25,3 +25,14 @@ Let us understand this with an example. In the following example, we are only pr
 Mutex also works likes a lock i.e. acquired an exclusive lock on a shared resource from concurrent access, but it works across multiple processes (if use named mutex). As we already discussed exclusive locking is basically used to ensure that at any given point of time, only one thread can enter into the critical section.
 
 See example code [here](003-MultithreadingUsingMutex/Program.cs)
+
+## What is Semaphore?
+
+The Semaphore is used to limit the number of threads that can have access to a shared resource concurrently. In other words, we can say that Semaphore allows one or more threads to enter into the critical section and execute the task concurrently with thread safety. So, in real-time, we need to use Semaphore when we have a limited number of resources and we want to limit the number of threads that can use it.
+
+See example code [here](004-Semaphore/Program.cs)
+
+As you can see in the above statement, we are passing two values to the constructor of the Semaphore class while initializing. These two values represent InitialCount and MaximumCount.
+
+- InitialCount parameter  defines the initial number of requests for the semaphore that can be granted concurrently. 
+- MaximumCount parameter defines the maximum number of requests for the semaphore that can be granted concurrently.
