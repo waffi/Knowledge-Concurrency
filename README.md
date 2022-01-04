@@ -32,7 +32,19 @@ The Semaphore is used to limit the number of threads that can have access to a s
 
 See example code [here](004-Semaphore/Program.cs)
 
-As you can see in the above statement, we are passing two values to the constructor of the Semaphore class while initializing. These two values represent InitialCount and MaximumCount.
+As you can see in the above example, we are passing two values to the constructor of the Semaphore class while initializing. These two values represent InitialCount and MaximumCount.
 
 - InitialCount parameter  defines the initial number of requests for the semaphore that can be granted concurrently. 
 - MaximumCount parameter defines the maximum number of requests for the semaphore that can be granted concurrently.
+
+## What is a Deadlock?
+
+We can define a deadlock is a situation where two or more threads are unmoving or frozen in their execution because they are waiting for each other to finish.
+
+See example code [here](005-Deadlock/Program.cs)
+
+In the following example, 
+- For thread1, Account1001 is resource1 and Account1002 is resource2. 
+- For thread2, Account1002 is resource1 and Account1001 is resource2.
+
+The deadlock occurred when thread1 wants to acquire a lock on Account1001 which is already locked by thread2. Similarly thread2 wants to acquire a lock on Account1002 which is already locked by thread1.
