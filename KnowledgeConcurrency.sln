@@ -13,11 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "004-Semaphore", "004-Semaph
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "005-Deadlock", "005-Deadlock\005-Deadlock.csproj", "{419BD96C-C5E2-4B56-AB7E-5C6A110A8E7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006_Deadlock_Solution", "006_Deadlock_Solution\006_Deadlock_Solution.csproj", "{B934D6DD-CE7B-47EA-9670-B303B02F8E73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006-DeadlockSolution", "006-DeadlockSolution\006-DeadlockSolution.csproj", "{B934D6DD-CE7B-47EA-9670-B303B02F8E73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007_OptimisticConcurrencyControl", "007_OptimisticConcurrencyControl\007_OptimisticConcurrencyControl.csproj", "{AC120D7D-837E-4254-A906-276735B8A0DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007-OptimisticConcurrencyControl", "007-OptimisticConcurrencyControl\007-OptimisticConcurrencyControl.csproj", "{AC120D7D-837E-4254-A906-276735B8A0DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008_PessimisticConcurrencyControl", "008_PessimisticConcurrencyControl\008_PessimisticConcurrencyControl.csproj", "{5E35B1DD-0155-4E53-9CF2-4838EA340E59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008-PessimisticConcurrencyControl", "008-PessimisticConcurrencyControl\008-PessimisticConcurrencyControl.csproj", "{5E35B1DD-0155-4E53-9CF2-4838EA340E59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

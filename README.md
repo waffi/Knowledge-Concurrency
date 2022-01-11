@@ -48,3 +48,32 @@ In the following example,
 - For thread2, Account1002 is resource1 and Account1001 is resource2.
 
 The deadlock occurred when thread1 wants to acquire a lock on Account1001 which is already locked by thread2. Similarly thread2 wants to acquire a lock on Account1002 which is already locked by thread1.
+
+One of the solution to handle deadlock is use try attempt to acquired lock
+
+See example code [here](006-DeadlockSolution/Program.cs)
+
+## Concurrency Control
+
+### Optimistic
+
+Optimistic Concurrency Control assumes that nothing's going to change while you're reading it.
+
+- Check if the record was updated by someone else before you commit the transaction.
+- If record dirty abort the transaction.
+
+Optimistic locking is useful if the possibility for conflicts is very low. Need to cautious of the fact that how will application recover from these failures.
+
+See example code [here](007-OptimisticConcurrencyControl/Program.cs)
+
+### Pessimistic
+
+Pessimistic Concurrency Control assumes that something will and so locks it.
+
+- Take an exclusive lock so that no one else can start modifying the record.
+- Others have to wait until the lock is released.
+- Can caused deadlock.
+
+Pessimistic locking is useful if there are a lot of updates and relatively high chances of users trying to update data at the same time.
+
+See example code [here](008-PessimisticConcurrencyControl/Program.cs)

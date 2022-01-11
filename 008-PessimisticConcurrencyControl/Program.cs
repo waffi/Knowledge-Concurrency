@@ -10,14 +10,6 @@ namespace _008_PessimisticConcurrencyControl
     {
         static void Main(string[] args)
         {
-            // Pessimistic Concurrency Control assumes that something will and so locks it
-
-            // Take an exclusive lock so that no one else can start modifying the record
-            // Others have to wait until the lock is released
-            // Can caused deadlock
-
-            // Pessimistic locking is useful if there are a lot of updates and relatively high chances of users trying to update data at the same time
-
             Console.WriteLine("Main Thread Started");
             InitialBalance();
 

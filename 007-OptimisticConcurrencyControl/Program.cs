@@ -10,14 +10,6 @@ namespace _007_OptimisticConcurrencyControl
     {
         static void Main(string[] args)
         {
-            // Optimistic Concurrency Control assumes that nothing's going to change while you're reading it.
-
-            // Check if the record was updated by someone else before you commit the transaction.
-            // If record dirty abort the transaction
-
-            // Optimistic locking is useful if the possibility for conflicts is very low
-            // Need to cautious of the fact that how will application recover from these failures.
-
             Console.WriteLine("Main Thread Started");
             InitialBalance();
 
